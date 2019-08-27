@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>3db1c513-a049-4748-9a36-cae38d356bdf</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="5.5.5" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="5.5.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0-preview8.19405.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0-preview8.19405.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0-preview8.19405.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.12" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0-preview8-19413-06" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.0.0-rc2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.0.0-rc2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUi" Version="5.0.0-rc2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Poc.MassTransit.Contract\Poc.MassTransit.Contract.csproj" />
+    <ProjectReference Include="..\Poc.MassTransit.Infrastructure\Poc.MassTransit.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

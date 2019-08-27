@@ -1,17 +1,14 @@
-﻿using System;
+﻿using log4net.Config;
+using MassTransit.Log4NetIntegration.Logging;
+using System;
 using System.IO;
 using System.Reflection;
 using System.Text;
-using System.Xml;
 using Topshelf;
 using Topshelf.Logging;
 using Topshelf.Unity;
-using Topshelf.HostConfigurators;
-using Unity;
-using MassTransit.Log4NetIntegration.Logging;
-using log4net.Config;
 
-namespace Poc.MassTransit.Calculate
+namespace Poc.MassTransit.Email
 {
     class Program
     {
@@ -33,7 +30,7 @@ namespace Poc.MassTransit.Calculate
 
                 cfg.UseUnityContainer(container);
 
-                cfg.Service<CalculateService>(s =>
+                cfg.Service<EmailService>(s =>
                 {
                     s.ConstructUsingUnityContainer();
                     s.WhenStarted((service, cfg) => service.Start(cfg));

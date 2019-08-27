@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.89
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.MassTransit.Calculate", "Poc.MassTransit.Calculate\Poc.MassTransit.Calculate.csproj", "{6BC6506A-D2E5-4856-B55C-874938030B30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poc.MassTransit.Calculate", "Poc.MassTransit.Calculate\Poc.MassTransit.Calculate.csproj", "{6BC6506A-D2E5-4856-B55C-874938030B30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.MassTransit.Client", "Poc.MassTransit.Client\Poc.MassTransit.Client.csproj", "{48E28524-5E5B-4B34-87DF-30BEF651BB00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.MassTransit.Contract", "Poc.MassTransit.Contract\Poc.MassTransit.Contract.csproj", "{0A25865C-63B7-4267-AC8C-24982D605D3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.MassTransit.Email", "Poc.MassTransit.Email\Poc.MassTransit.Email.csproj", "{7D5E88D2-AA81-4879-825E-7F5A63471F90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.MassTransit.Infrastructure", "Poc.MassTransit.Infrastructure\Poc.MassTransit.Infrastructure.csproj", "{73DEE21D-0AA3-4ABE-9375-8E22E10E17B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poc.MassTransit.ClientWeb", "Poc.MassTransit.ClientWeb\Poc.MassTransit.ClientWeb.csproj", "{9CFFE399-41ED-4147-98E4-BB5A98667817}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{6BC6506A-D2E5-4856-B55C-874938030B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BC6506A-D2E5-4856-B55C-874938030B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BC6506A-D2E5-4856-B55C-874938030B30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48E28524-5E5B-4B34-87DF-30BEF651BB00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48E28524-5E5B-4B34-87DF-30BEF651BB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48E28524-5E5B-4B34-87DF-30BEF651BB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48E28524-5E5B-4B34-87DF-30BEF651BB00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A25865C-63B7-4267-AC8C-24982D605D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A25865C-63B7-4267-AC8C-24982D605D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A25865C-63B7-4267-AC8C-24982D605D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A25865C-63B7-4267-AC8C-24982D605D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D5E88D2-AA81-4879-825E-7F5A63471F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D5E88D2-AA81-4879-825E-7F5A63471F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D5E88D2-AA81-4879-825E-7F5A63471F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D5E88D2-AA81-4879-825E-7F5A63471F90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73DEE21D-0AA3-4ABE-9375-8E22E10E17B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73DEE21D-0AA3-4ABE-9375-8E22E10E17B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73DEE21D-0AA3-4ABE-9375-8E22E10E17B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73DEE21D-0AA3-4ABE-9375-8E22E10E17B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CFFE399-41ED-4147-98E4-BB5A98667817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CFFE399-41ED-4147-98E4-BB5A98667817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CFFE399-41ED-4147-98E4-BB5A98667817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CFFE399-41ED-4147-98E4-BB5A98667817}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
