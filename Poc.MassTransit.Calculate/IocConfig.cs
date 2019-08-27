@@ -1,4 +1,6 @@
-﻿using MassTransit;
+﻿using GreenPipes;
+using GreenPipes.Introspection;
+using MassTransit;
 using MassTransit.Saga;
 using Poc.MassTransit.Calculate.Consumer;
 using Poc.MassTransit.Calculate.Services;
@@ -51,7 +53,7 @@ namespace Poc.MassTransit.Calculate
 
             });
 
-            //busControl.rec
+            
 
             container.RegisterInstance<IBusControl>(busControl);
             container.RegisterInstance<IBus>(busControl);

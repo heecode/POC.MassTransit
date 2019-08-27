@@ -1,5 +1,8 @@
-﻿using MassTransit;
+﻿using GreenPipes;
+using GreenPipes.Introspection;
+using MassTransit;
 using MassTransit.Logging;
+using Newtonsoft.Json;
 using Poc.MassTransit.Calculate.Event;
 using Poc.MassTransit.Calculate.Services;
 using Poc.MassTransit.Contract.Command;
@@ -31,6 +34,11 @@ namespace Poc.MassTransit.Calculate.Consumer
 
             //Publish event
             await _bus.Publish<ScorecardGenerated>(new { WpbYear = calculated.ToString() });
+
+         //   ProbeResult result = _bus.GetProbeResult();
+
+          //  _log.InfoFormat(JsonConvert.SerializeObject(result.Results));
+          
 
         }
 
