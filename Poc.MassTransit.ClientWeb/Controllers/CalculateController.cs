@@ -27,13 +27,13 @@ namespace Poc.MassTransit.ClientWeb.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Calculate(int wpbYeat)
+        public async Task<IActionResult> Calculate(int wpbYear)
         {
             var url = _op.Value.Host + "/" + MassTransitQueue.GenerateScorecard;
             var sendEndpoint = await _bus.GetSendEndpoint(new Uri(url));
             await sendEndpoint.Send<GenerateScorecard>(new
             {
-                WpbYear = wpbYeat
+                WpbYear = wpbYear
             });
 
             return Accepted();
