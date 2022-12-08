@@ -10,7 +10,7 @@
     <PackageReference Include="MassTransit.Log4Net" Version="5.5.5" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="5.5.5" />
     <PackageReference Include="MassTransit.Unity" Version="5.5.5" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
     <PackageReference Include="Topshelf" Version="4.2.1" />
     <PackageReference Include="Topshelf.Log4Net" Version="4.2.1" />
